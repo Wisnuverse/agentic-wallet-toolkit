@@ -1,5 +1,7 @@
 # Agentic Wallet Toolkit
 
+[![build](https://github.com/Wisnuverse/agentic-wallet-toolkit/actions/workflows/build.yml/badge.svg)](https://github.com/Wisnuverse/agentic-wallet-toolkit/actions/workflows/build.yml)
+
 Tools built and used in production for **Binance Agentic Wallet / Agent ID**
 workflows on BNB Smart Chain: pre-mint on-chain verification, Keccak-256
 proof-of-work solvers, and EIP-712 signature-recovery checks.

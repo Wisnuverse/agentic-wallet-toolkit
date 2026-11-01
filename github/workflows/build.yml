@@ -1,0 +1,23 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  solvers:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build tailsolve
+        run: gcc -O3 -pthread -Wall -Wextra -o tailsolve solvers/tailsolve.c
+
+      - name: Build pixmine
+        run: gcc -O3 -pthread -Wall -Wextra -o pixmine solvers/pixmine.c
+
+      - name: Self-test tailsolve
+        run: ./tailsolve --selftest
+        

@@ -48,6 +48,21 @@ node scripts/verify-recovery-byte.mjs typed-data.json <64-byte-signature-hex> <e
 
 Requires [`viem`](https://viem.sh): `npm install viem`.
 
+## Benchmarks
+
+Throughput numbers and the preparation rules they bought us:
+[BENCHMARKS.md](BENCHMARKS.md). The C solvers are built and self-tested by
+CI on every push.
+
+## Field notes
+
+Short post-mortems from live operations — the failures that produced the
+rules in the check-first skill:
+
+- [“No market on the project site” ≠ “no market”](docs/field-notes/element-market-lesson.md)
+- [Report what landed, never what the simulation promised](docs/field-notes/decaying-pool-lesson.md)
+- [`eth_call` passing does not mean the transaction can succeed](docs/field-notes/vrf-pot-lesson.md)
+
 ## Safety notes
 
 - No private keys, seed phrases, session tokens, or API keys are stored in

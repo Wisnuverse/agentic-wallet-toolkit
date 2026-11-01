@@ -51,8 +51,7 @@ Requires [`viem`](https://viem.sh): `npm install viem`.
 ## Benchmarks
 
 Throughput numbers and the preparation rules they bought us:
-[BENCHMARKS.md](BENCHMARKS.md). The C solvers are built and self-tested by
-CI on every push.
+[BENCHMARKS.md](BENCHMARKS.md).
 
 ## Field notes
 
